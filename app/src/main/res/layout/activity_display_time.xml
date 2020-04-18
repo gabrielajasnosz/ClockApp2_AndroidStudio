@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".display_time">
+
+    <TextView
+        android:id="@+id/tokioTime"
+        android:layout_width="145dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="72dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/tokio" />
+
+    <TextView
+        android:id="@+id/mTime"
+        android:layout_width="240dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="86dp"
+        android:text="Mobile Time:"
+        android:textAlignment="center"
+        android:textColor="#212F7A"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/localx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/localx"
+        android:layout_width="181dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="492dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mTime" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/londonTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/localx"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/unitedkingdom" />
+
+    <TextView
+        android:id="@+id/london"
+        android:layout_width="145dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="10dp"
+        android:text="London"
+        android:textAlignment="center"
+        android:textColor="#212F7A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/londonTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/localx" />
+
+    <TextView
+        android:id="@+id/londonTime"
+        android:layout_width="145dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="356dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/london" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="70sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintEnd_toStartOf="@+id/nowyjorkTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/usa" />
+
+    <TextView
+        android:id="@+id/nowyJork"
+        android:layout_width="145dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="17dp"
+        android:text="Nowy Jork"
+        android:textAlignment="center"
+        android:textColor="#212F7A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/nowyjorkTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tokio"
+        android:layout_width="145dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="23dp"
+        android:text="Tokio"
+        android:textAlignment="center"
+        android:textColor="#212F7A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tokioTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/nowyjorkTime" />
+
+    <TextView
+        android:id="@+id/nowyjorkTime"
+        android:layout_width="145dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="223dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/nowyJork"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="70sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tokioTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/japan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
